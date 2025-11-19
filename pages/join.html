@@ -46,11 +46,11 @@
             <p class="font-heading text-sm uppercase tracking-[0.3em] text-[var(--accent)] mb-4">How to join</p>
             <h1 class="font-heading text-5xl md:text-6xl font-extrabold tracking-tight mb-6">Join the Crew.</h1>
             <p class="text-lg text-gray-600 leading-relaxed mb-8">
-A simple way to join a global circle of builders. No forms, no friction — just join the chat, share what you want to build, and step into the next one-day lab.
-</p>
+                Step into a global circle of builders. Say hi in the chat, drop your idea, fill a quick survey so we know how to help—and show up ready to ship.
+            </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="https://t.me/+IxxCRjYSytsyYzcx" class="cta-button font-bold text-lg px-10 py-5 text-center">Join the chat</a>
-                <a href="#application" class="font-bold text-lg px-10 py-5 rounded-full border-2 border-black text-black text-center hover:bg-black hover:text-white transition">Apply now</a>
+                <a href="#survey" class="font-bold text-lg px-10 py-5 rounded-full border-2 border-black text-black text-center hover:bg-black hover:text-white transition">Fill the survey</a>
             </div>
         </div>
     </header>
@@ -67,8 +67,8 @@ A simple way to join a global circle of builders. No forms, no friction — just
 
             <div class="card p-8 rounded-3xl space-y-3">
                 <div class="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center font-heading text-xl">2</div>
-                <h3 class="font-heading text-2xl font-bold">Get oriented</h3>
-                <p class="text-gray-600">We help you find the right team or build track based on your idea.</p>
+                <h3 class="font-heading text-2xl font-bold">Fill the quick survey</h3>
+                <p class="text-gray-600">Drop what you want to build, who you are, and the skills you bring so we can match you fast.</p>
             </div>
 
             <div class="card p-8 rounded-3xl space-y-3">
@@ -98,23 +98,27 @@ A simple way to join a global circle of builders. No forms, no friction — just
             </div>
         </section>
 
-        <section id="application" class="reveal bg-white p-10 md:p-16 rounded-3xl border border-gray-200">
+        <section id="survey" class="reveal bg-white p-10 md:p-16 rounded-3xl border border-gray-200">
             <div class="grid md:grid-cols-2 gap-12 items-start">
                 <div>
-                    <p class="font-heading text-sm uppercase tracking-[0.3em] text-[var(--accent)] mb-4">Application</p>
-                    <h2 class="font-heading text-4xl font-bold mb-6">Want to join a build day?</h2>
+                    <p class="font-heading text-sm uppercase tracking-[0.3em] text-[var(--accent)] mb-4">Quick survey</p>
+                    <h2 class="font-heading text-4xl font-bold mb-6">Tell us what you want to build</h2>
                     <p class="text-lg text-gray-600 leading-relaxed mb-4">
-Joining the Crew is simple: hop into the chat, share your idea, and we’ll guide you from there.
-</p>
+                        Joining the Crew is simple: hop into the chat, then send us this quick snapshot so we can pair you with the right people.
+                    </p>
                     <p class="text-lg text-gray-600 leading-relaxed">
-Participation is donation-based. Contributions are optional but appreciated — they help us cover space, snacks, and equipment.
-</p>
+                        Participation is donation-based. Contributions help cover space, snacks, and equipment—totally optional, always appreciated.
+                    </p>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-2xl space-y-4 text-gray-700">
-                    <p>No formal application needed. Just join the chat and introduce what you want to build.</p>
-                    <a href="https://t.me/+IxxCRjYSytsyYzcx" class="cta-button font-bold text-lg px-10 py-5 w-full block text-center">Join the chat</a>
-                    <p class="text-xs text-gray-500">Optional donations accepted during events.</p>
-                </div>
+                <form id="build-survey" class="bg-gray-50 p-8 rounded-2xl space-y-4 text-gray-700">
+                    <input type="text" name="name" placeholder="Full name" required class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[var(--accent)] focus:outline-none">
+                    <input type="email" name="email" placeholder="Email" required class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[var(--accent)] focus:outline-none">
+                    <input type="text" name="location" placeholder="Where are you based?" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[var(--accent)] focus:outline-none">
+                    <textarea name="idea" rows="4" placeholder="What do you want to build or automate?" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[var(--accent)] focus:outline-none"></textarea>
+                    <textarea name="expertise" rows="3" placeholder="What expertise or tools do you bring?" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[var(--accent)] focus:outline-none"></textarea>
+                    <button type="submit" class="cta-button font-bold text-lg px-10 py-5 w-full block">Send survey</button>
+                    <p id="survey-status" class="text-xs text-gray-500 text-center">We’ll follow up in chat with next steps.</p>
+                </form>
             </div>
         </section>
 
